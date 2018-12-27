@@ -69,6 +69,7 @@ class MainPageState extends State<MainPageWidget>{
     return new Scaffold(
       body: _pageList[_tabIndex],
       bottomNavigationBar: new BottomNavigationBar(
+
           items: <BottomNavigationBarItem>[
             new BottomNavigationBarItem(icon: getTabIcon(0),title: getTabTitle(0)),
             new BottomNavigationBarItem(icon: getTabIcon(1),title: getTabTitle(1)),
