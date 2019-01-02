@@ -65,46 +65,46 @@ class MineState extends State<Mine> {
       );
     }
 
-    return new ListView(
-      children: <Widget>[
-        new Container(
-          width: MediaQuery.of(context).size.width,
-          height: 200.0,
-          child: Swiper(
-            itemCount: 3,
-            viewportFraction: 0.85,
-            scale: 0.9,
-            itemBuilder: _swiperBuilder,
-            pagination: new SwiperPagination(
-                builder: DotSwiperPaginationBuilder(
-              color: Colors.black54,
-              activeColor: Colors.white,
-            )),
-            controller: new SwiperController(),
-            scrollDirection: Axis.horizontal,
-            autoplay: true,
-            onTap: (index) {
-              print('click $index');
-            },
-          ),
-        ),
-        new Container(
-          margin: const EdgeInsets.only(top: 30.0),
-          width: MediaQuery.of(context).size.width,
-          child: new Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-//              new Expanded(child: new Text('111',textAlign: TextAlign.center),),
-//              new Expanded(child: new Text('222',textAlign: TextAlign.center),),
-//              new Expanded(child: new FittedBox(fit: BoxFit.contain,child: const FlutterLogo(),),),
-              buildButtonColumn(Icons.call, 'CALL'),
-              buildButtonColumn(Icons.near_me, "ROUTE"),
-              buildButtonColumn(Icons.share, "SHARE"),
-            ],
-          ),
-        )
-      ],
-    );
+//    return new ListView(
+//      children: <Widget>[
+//        new Container(
+//          width: MediaQuery.of(context).size.width,
+//          height: 200.0,
+//          child: Swiper(
+//            itemCount: 3,
+//            viewportFraction: 0.85,
+//            scale: 0.9,
+//            itemBuilder: _swiperBuilder,
+//            pagination: new SwiperPagination(
+//                builder: DotSwiperPaginationBuilder(
+//              color: Colors.black54,
+//              activeColor: Colors.white,
+//            )),
+//            controller: new SwiperController(),
+//            scrollDirection: Axis.horizontal,
+//            autoplay: true,
+//            onTap: (index) {
+//              print('click $index');
+//            },
+//          ),
+//        ),
+//        new Container(
+//          margin: const EdgeInsets.only(top: 30.0),
+//          width: MediaQuery.of(context).size.width,
+//          child: new Row(
+//            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//            children: <Widget>[
+////              new Expanded(child: new Text('111',textAlign: TextAlign.center),),
+////              new Expanded(child: new Text('222',textAlign: TextAlign.center),),
+////              new Expanded(child: new FittedBox(fit: BoxFit.contain,child: const FlutterLogo(),),),
+//              buildButtonColumn(Icons.call, 'CALL'),
+//              buildButtonColumn(Icons.near_me, "ROUTE"),
+//              buildButtonColumn(Icons.share, "SHARE"),
+//            ],
+//          ),
+//        )
+//      ],
+//    );
 
     return Container(
       width: MediaQuery.of(context).size.width,
