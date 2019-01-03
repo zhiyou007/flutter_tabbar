@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/HomePage.dart';
 import 'package:flutter_app/MinePage.dart';
 import 'package:flutter_app/FindPage.dart';
+import 'package:flutter_app/RemenPage.dart';
 
 class MainPage extends StatelessWidget{
 
@@ -58,7 +59,8 @@ class MainPageState extends State<MainPageWidget>{
       _pageList = [
           new HomePage(),
           new FindPage(),
-          new MinePage(),
+          //new MinePage(),
+          new RemenPage(),
       ];
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/FindPage.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class MinePage extends StatelessWidget {
@@ -52,6 +53,7 @@ class MineState extends State<Mine> {
           Icon(icon, color: color),
           Container(
             margin: const EdgeInsets.only(top: 8.0),
+
             child: Text(
               label,
               style: TextStyle(
@@ -107,6 +109,7 @@ class MineState extends State<Mine> {
 //    );
 
     return Container(
+      color: Color.fromARGB(255, 255, 255, 0),
       width: MediaQuery.of(context).size.width,
       height: 200.0,
       child: Swiper(
@@ -124,6 +127,10 @@ class MineState extends State<Mine> {
         autoplay: true,
         onTap: (index) {
           print('click $index');
+          Navigator.push(
+            context,
+            new MaterialPageRoute(builder: (context) => new Find()),
+          );
         },
       ),
     );
